@@ -47,7 +47,7 @@
         <script>
         var map = L.map('map', {
             zoomControl:false, maxZoom:28, minZoom:1
-        }).fitBounds([[-32.968000011224994,-68.90784289829107],[-32.885474283884996,-68.7602626436706]]);
+        }).fitBounds([[-32.96969574534842,-68.91668127008587],[-32.88717001800842,-68.76910101546541]]);
         var hash = new L.Hash(map);
         map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
@@ -249,21 +249,6 @@
                     <tr>\
                         <td class="visible-with-data" id="Acta" colspan="2"><strong>Acta</strong><br />' + (feature.properties['Acta'] !== null ? autolinker.link(String(feature.properties['Acta']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
-                    <tr>\
-                        <td class="visible-with-data" id="FECHA_1" colspan="2"><strong>FECHA_1</strong><br />' + (feature.properties['FECHA_1'] !== null ? autolinker.link(String(feature.properties['FECHA_1']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td class="visible-with-data" id="Nº para O" colspan="2"><strong>Nº para O</strong><br />' + (feature.properties['Nº para O'] !== null ? autolinker.link(String(feature.properties['Nº para O']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td class="visible-with-data" id="Acta_1" colspan="2"><strong>Acta_1</strong><br />' + (feature.properties['Acta_1'] !== null ? autolinker.link(String(feature.properties['Acta_1']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td class="visible-with-data" id="FECHA_2" colspan="2"><strong>FECHA_2</strong><br />' + (feature.properties['FECHA_2'] !== null ? autolinker.link(String(feature.properties['FECHA_2']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td class="visible-with-data" id="Nº para_1" colspan="2"><strong>Nº para_1</strong><br />' + (feature.properties['Nº para_1'] !== null ? autolinker.link(String(feature.properties['Nº para_1']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
                 </table>';
             var content = removeEmptyRowsFromPopupContent(popupContent, feature);
 			layer.on('popupopen', function(e) {
@@ -284,7 +269,7 @@
                 weight: 2.0,
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(255,83,83,1.0)',
+                fillColor: 'rgba(255,85,85,1.0)',
                 interactive: true,
             }
         }
